@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="am">
+    <link rel="stylesheet" href="ethioprostyle.css" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ንብረት ሽያጭ በኢትዮጵያ</title>
+  </head>
+  <body>
+    <header>
+      <h1>የንብረት ሽያጭ - Property Listings Ethiopia</h1>
+      <nav>
+        <button id="viewListingsBtn">🏠 የቀረቡ ንብረቶች</button>
+        <button id="postPropertyBtn">➕ ንብረት ያስገቡ</button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="listings" id="listingsSection">
+        <h2>የቀረቡ ንብረቶች / Available Properties</h2>
+        <input type="text" id="searchInput" placeholder="ፈልግ በአካባቢ / Search by location" />
+        <div id="listings"></div>
+      </section>
+
+      <section class="form-section hidden" id="formSection">
+        <h2>ንብረት ያስገቡ / Post a Property</h2>
+        <form id="listingForm">
+          <input type="text" id="title" placeholder="ርዕስ / Title" required />
+          <input type="text" id="type" placeholder="አይነት (መኪና / ቤት)" required />
+          <input type="text" id="location" placeholder="አካባቢ / Location" required />
+          <input type="number" id="price" placeholder="ዋጋ / Price (ETB)" required />
+          <input type="tel" id="phone" placeholder="ስልክ / Phone" required />
+          <input type="file" id="image" accept="image/*" required />
+          <button type="submit">ያስገቡ / Post</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 ንብረት ሽያጭ - Ethiopia Property Listings</p>
+    </footer>
+    <script src="ethioproJS.js"></script>
+  </body>
+</html>
